@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Hover element-selector or child combinator</title>
+    <style type="text/css">
+      #MainUL li ul li {
+        display: none;
+        color: blue;
+      }
+      #MainUL li:hover ul li {
+        display: block;
+      }
+      #MainUL li:hover ul li ul li {
+        display: none;
+      }
+      #MainUL li ul li:hover ul li {
+        display: block;
+      }
+      #MainUL li:hover {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="MainUL">
+      <li>
+        SCHOOL
+        <ul>
+          <li>
+            TEACHER NAME
+            <ul>
+              <li>Name1</li>
+              <li>Name2</li>
+              <li>Name3</li>
+            </ul>
+          </li>
+          <li style="color: #ffff">STUDENT Name</li>
+          <li style="border: beige">MOBILE NUMBER</li>
+        </ul>
+      </li>
+      <li>
+        Microsoft
+        <ul>
+          <li>Bing</li>
+          <li>Linked In</li>
+        </ul>
+      </li>
+      <li>
+        Amazon
+        <ul>
+          <li>AWS</li>
+          <li>Ecommerce</li>
+          <li>A-ML</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

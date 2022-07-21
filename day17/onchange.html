@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 17</title>
+  </head>
+  <body>
+    <p>Select one of the favourite fruit from the given list to display.</p>
+    <select id="Choose" onchange="Func_a()">
+      <option disabled selected>Select</option>
+      <option value="Chicoo">Chicoo</option>
+      <option value="Banana">Banana</option>
+      <option value="Guava">Guava</option>
+      <option value="Pineapple">Pineapple</option>
+    </select>
+
+    <p>Get one of the fruits to consume and then digest it.</p>
+    <p id="demo1"></p>
+    <script>
+      function Func_a() {
+        varx_ip = document.getElementById("Choose").value;
+        document.getElementById("demo1").innerHTML =
+          "Select from the given fruit list " + x_ip;
+      }
+    </script>
+  </body>
+</html>

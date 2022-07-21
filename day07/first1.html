@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html media queries</title>
+    
+    <style>
+        body{
+            font: 14px Georgia,serif;
+            background: #ccc;
+        }
+       /* article,aside,figure,footer,header,hgroup,menu,
+        nav,section{
+            display: block;
+        }*/
+        h3{
+            margin: 0 0 8px 0;
+        }
+        p{
+            margin: 0 0 20px 0;
+        }
+        #fluid-wrap{
+            width: 70%;
+            margin: 60px auto;
+            padding: 20px;
+            background: #ccc;
+            overflow: hidden;
+        }
+        #sidebar{
+            width: 35%;
+            float: left;
+        }
+        #sidebar ul li a {
+            color: #900;
+            text-decoration: none;
+            display: block;
+        }
+        @media all and (min-width: 1001px){
+            #sidebar ul li a:after {
+                content: "("att(data-email)")";
+            }  
+        }
+        @media all and (max-width: 1010px) and (min-width: 700px){
+            #sidebar ul li a::before{
+                content: "(email)";
+                padding: 10px;
+                font-size: smaller;
+                font-style: italic;
+                color: antiquewhite;
+            }
+        }
+        #main-content{
+            width: 65%;
+            float: right;
+        }
+    
+            
+        
+
+    </style>
+</head>
+<body>
+    <div id="fluid-wrap">
+        <div id="sidebar">
+    <h3>Team DP group:</h3>
+    <ul id="nav">
+        <li><a data-email="dhruv11@gmail.com" href="#">Dhruv Patel</a></li>
+        <li><a data-email="dhruv11@gmail.com" href="#">Naman Patel</a></li>
+        <li><a data-email="dhruv11@gmail.com" href="#">Pratik Patel</a></li>
+    </ul>
+</div>
+    <div id="main-content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sed esse doloremque vitae veniam reiciendis provident perferendis necessitatibus quaerat unde ea vel aliquid fugit quidem ipsa quam, obcaecati harum molestias aspernatur odit possimus voluptate beatae quos. Tenetur architecto magnam sequi rerum, nesciunt itaque esse dolor, voluptatem sed sapiente est blanditiis voluptatibus maxime fugit ab saepe facere fugiat voluptatum accusamus quaerat eaque. Facilis unde odio quibusdam accusamus molestias voluptates! Praesentium pariatur  qui debitis fuga ducimus porro, accusantium, error ipsum rem atque suscipit doloremque dolor cum totam aliquam ipsa placeat consequatur blanditiis facilis. Quas, vitae. In doloremque quo dolore quia tempore voluptas?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus est exercitationem saepe expedita consequuntur sint iste rerum magnam. Dolores nulla excepturi sequi, eligendi non error nostrum. Nemo optio aut cumque.</p>
+    </div>
+    <div class="ds">
+        
+    </div>
+    <div class="da">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+    </div>
+    <div class="dq">
+        <div class="cd"></div>
+        <div class="cd"></div>
+        <div class="cd"></div>
+        <div class="cd"></div>
+    </div>
+</body>
+</html>
